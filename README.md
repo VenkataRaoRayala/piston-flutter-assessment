@@ -259,6 +259,11 @@ feature/
 **After**:
 ![junk issue solved while scrolling long list](https://github.com/user-attachments/assets/9d9fe647-3b10-4623-b380-6dc56e4804c2)
 
+### future considerations
+- Paginated loading of data
+- Offline support(TBD becuase data security reasons, if still want this, need to use encryption measures)
+- Filters, spending charts
+
 
 
   
