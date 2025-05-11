@@ -251,4 +251,15 @@ feature/
 - Used listview.separated
 - Used Boundary for list tile
 - Used autodispose provider
+- Used riverpod async builder, UI will rendered only when data is changed
+---
+### Performance Screenshots
+**Before**:
+![app_start_performance_before_code changes](https://github.com/user-attachments/assets/0f015d18-b9e5-4e90-a2e9-f104b48da649)
+**After**:
+![junk issue solved while scrolling long list](https://github.com/user-attachments/assets/9d9fe647-3b10-4623-b380-6dc56e4804c2)
+
+
+
+  
 
