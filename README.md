@@ -215,3 +215,36 @@ Do not share or discuss the assignment publicly.
 Good luck, and show us how you can turn a messy, slow app into a **polished, performant product**! 🚀
 
 ---
+
+## Submission report
+
+## 🧱 New Architecture Explanation
+
+### 🔁 Layered Clean Architecture
+
+```plaintext
+feature/
+├── transactions/
+│   ├── data/                # Data layer: DTOs, APIs, Repositories Impl
+│   │   ├── datasources/
+│   │   ├── models/
+│   │   └── repositories/
+│   ├── domain/              # Domain layer: Entities, Usecases, Abstract Repos
+│   │   ├── entities/
+│   │   ├── repositories/
+│   │   └── usecases/
+│   ├── presentation/        # UI layer: Pages, Providers, Widgets
+│   │   ├── pages/
+│   │   ├── providers/
+│   │   └── widgets/
+```
+
+### 📌 Key Design Choices
+
+- **Riverpod** is used for state management (scoped providers).
+- **UseCase Driven**: Each domain logic is accessed via a specific use case.
+- **Decoupled Repository**: Allows easy swapping of implementation
+- **Modular Components**: Easy to extend and test in isolation.
+
+---
+
