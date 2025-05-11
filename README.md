@@ -247,4 +247,8 @@ feature/
 - **Modular Components**: Easy to extend and test in isolation.
 
 ---
+### Performance aspects
+- Used listview.separated
+- Used Boundary for list tile
+- Used autodispose provider
 
