@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
-import 'screens/transactions_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'feature/transactions/presentation/pages/transactions_page.dart';
 
 void main() {
-  runApp(const ZephyrPayApp());
+  runApp(ProviderScope(child: const ZephyrPayApp()));
 }
 
 class ZephyrPayApp extends StatelessWidget {
-  const ZephyrPayApp({Key? key}) : super(key: key);
+  const ZephyrPayApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'ZephyrPay', theme: ThemeData(primarySwatch: Colors.blue), home: const TransactionsPage());
+    return MaterialApp(
+        title: 'ZephyrPay',
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: const TransactionsPage()
+    );
   }
 }
