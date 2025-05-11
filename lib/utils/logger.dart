@@ -1,3 +1,7 @@
+import 'package:flutter/foundation.dart';
+
 void logMessage(String message) {
-  print('[ZephyrPay] $message');
+  if (kDebugMode) {
+    print('[ZephyrPay] $message');
+  }
 }
